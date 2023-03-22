@@ -74,3 +74,26 @@ Ví dụ, nếu request có header "`Content-Type: application/json`", thì giá
 - `Authorization`: chứa thông tin xác thực (authentication) của người dùng được gửi kèm theo trong request.
 - `Cookie`: Chứa danh sách các cookie được gửi kèm theo trong request.
 và nhiều headers khác liên quan đến HTTP request và cách hoạt động của phần body của request.
+
+# res
+Trong JavaScript, biến `res` thường được sử dụng trong các hàm callback của các framework hoặc thư viện phía server như Node.js, Express.js, hoặc các thư viện HTTP request như `axios`.
+
+
+`res` là một tham số đầu vào của hàm callback và được sử dụng để trả về kết quả từ server đến client. Khi ta gửi một yêu cầu (request) từ client đến server, server xử lý nó và trả về một kết quả (response) thông qua biến `res`.
+
+
+`res` có thể được sử dụng để trả về các thông tin hoặc dữ liệu từ server về client, như là một phản hồi (response) cho yêu cầu mà client đã gửi. Ví dụ:
+
+
+`res.send()`: được sử dụng để trả về một chuỗi (string) như là nội dung HTML hoặc JSON của response.
+`res.json()`: được sử dụng để trả về dữ liệu dưới dạng JSON.
+`res.render()`: được sử dụng để trả về một trang HTML được render từ các file view(s).
+`res.redirect()`: được sử dụng để chuyển hướng đến một URL khác.
+
+Với các thư viện HTTP request như `axios`, `res` cũng được sử dụng để nhận các phản hồi từ server, và có thể được sử dụng để truy xuất thông tin phản hồi như headers, một phần của body, hoặc các mã lỗi HTTP (`status code`).
+
+
+Lưu ý rằng biến `res` không phải là một biến có sẵn trong JavaScript, mà chỉ tồn tại trong ngữ cảnh của các framework hoặc thư viện phía server mà ta đang sử dụng.
+
+
+
